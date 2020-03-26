@@ -1,6 +1,9 @@
 ---
 title: My Second Post!
 date: "2015-05-06T23:46:37.121Z"
+link: "https://youtube.com/"
+price: "Free"
+tags: ["Social"]
 ---
 
 Wow! I love blogging so much already.

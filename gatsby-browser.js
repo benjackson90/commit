@@ -1,5 +1,3 @@
-// custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
-
-import "prismjs/themes/prism.css"
+import "./src/styles/tailwind.css";
+import "./src/styles/markdown.css";
+import "./src/styles/prism-material-light.css";

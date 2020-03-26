@@ -42,7 +42,6 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
@@ -70,10 +69,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-postcss`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-plugin-purgecss`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        tailwind: true,
+        purgeOnly: ['src/styles/tailwind.css'],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
