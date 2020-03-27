@@ -3,3 +3,12 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.required::before {
+  display: inline-block;
+  margin-right: 4px;
+  color: #ff4d4f;
+  font-size: 14px;
+  line-height: 1;
+  content: '*';
+}

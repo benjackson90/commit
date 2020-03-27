@@ -14,7 +14,7 @@ const BlogIndex = ({ data, location }) => {
   const post = useMemo(() => (
     posts.find(({ node }) => slug === node.fields.slug)
   ), [ posts, slug ]);
-  
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
@@ -42,6 +42,7 @@ export const pageQuery = graphql`
           }
           html
           frontmatter {
+            name
             date(formatString: "MMMM DD, YYYY")
             title
             description

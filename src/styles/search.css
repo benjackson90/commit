@@ -1,0 +1,58 @@
+.HitsWrapper {
+  max-height: 80vh;
+  overflow: scroll;
+  z-index: 2;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  left: 8px;
+  top: calc(100% + 1.3em);
+  width: 80vw;
+  max-width: 30em;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 0.7em 1em 0.4em;
+  background: white;
+  border-radius: 0.2rem;
+
+}
+
+.HitsWrapper > * + * {
+	padding-top: 1em !important;
+  border-top: 1px solid #e2e8f0;
+
+}
+
+.HitsWrapper li + li {
+	margin-top: 0.7em;
+	padding-top: 0.7em;
+  border-top: 1px solid #bcbcbc;
+}
+
+.HitsWrapper * {
+	margin-top: 0;
+	padding: 0;
+}
+
+.HitsWrapper ul {
+	list-style: none;
+}
+
+.HitsWrapper mark {
+  color: #1CD4D4;
+  background: #C1FEF6;
+}
+
+.HitsWrapper h3 {
+	margin: 0 0 0.5em;
+}
+
+.HitsWrapper h4 {
+	margin-bottom: 0.3em;
+}
+
+.ais-Hits-item:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.search-placeholder::placeholder {
+  color: white;
+}

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Card } from "../components/Card"
-import { PostModal } from "../components/PostModal"
+import { PostModal } from "../components/PostModal";
 
 export const PostList = ({ pathname, posts, post, slug }) => {
+
   return (
     <>
       <PostModal pathname={pathname} slug={slug} post={post} />
