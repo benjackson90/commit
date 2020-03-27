@@ -12,7 +12,7 @@ const findImage = (str) => {
   elem.insertAdjacentHTML('beforeend', str);
   const imageEl = elem.querySelector('img');
 
-  return imageEl ? imageEl.outerHTML : '';
+  return imageEl ? imageEl.outerHTML : null;
 }
 
 
@@ -27,21 +27,20 @@ export const Card = ({ post }) => {
 
   const url = post.frontmatter.link ? new URL(post.frontmatter.link) : {}
   const imageHtml = findImage(post.html);
-  console.log(imageHtml);
 
   return (
     <div className="w-full sm:w-card-1/2 md:w-card-1/3 lg:w-card-1/3 xl:w-card-1/4 m-2 px-2" onClick={onClick}>
       <div className="group block no-underline h-full overflow-hidden rounded-sm relative shadow-md">
         <div className="select-none cursor-pointer flex flex-col h-full">
-          {imageHtml ? (
-            <div className="h-48 w-full relative" dangerouslySetInnerHTML={{ __html: imageHtml }} />
-          ) : (
+          {!!imageHtml && (
+            <section className="h-48 w-full relative" dangerouslySetInnerHTML={{ __html: `<div> ${imageHtml} </div>` }} />
+          )}
+          {!imageHtml && (
             <div className="flex items-center justify-center flex-col h-48 w-full relative bg-gray-100">
               <span className="text-2xl text-pink-500 font-semibold">#AgainstCovid19</span>
               <span className="text-2xl text-pink-500 font-semibold">#{post.frontmatter.name}</span>
             </div>
           )}
-
           <div className="p-5 flex flex-col justify-between flex-1">
             <div className="flex flex-wrap">
               {(get(post,"frontmatter.tags") || []).map(tag => (

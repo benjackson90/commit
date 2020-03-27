@@ -69,7 +69,7 @@ export const SubmitModal = ({ onSuccess }) => {
 
   return (
     <>
-      <button onClick={openModal} type="button" className="inline-flex justify-center rounded-md border border-transparent px-4 py-2 bg-pink-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-pink-700 focus:outline-none focus:shadow-outline-red transition ease-in-out duration-150 sm:text-sm sm:leading-5">Submit</button>
+      <button onClick={openModal} type="button" className="inline-flex justify-center rounded-md border border-transparent px-4 py-2 bg-pink-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-pink-700 focus:outline-none focus:shadow-outline-red transition ease-in-out duration-150 hidden lg:flex sm:text-sm sm:leading-5">Submit</button>
       {showModal ? (
         <>
           <div

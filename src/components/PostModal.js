@@ -34,7 +34,7 @@ export const PostModal = ({ pathname, post, slug }) => {
                 {/* <div className="absolute inset-0 bg-gray-500 opacity-75"></div> */}
               </div>
 
-              <div style={{ height: "calc(100% - 126px)"}} onClick={stopBubbles} className="bg-white rounded-lg overflow-x-hidden overflow-y-auto shadow-xl transform transition-all sm:max-w-4xl sm:w-full">
+              <div style={{ height: "750px"}} onClick={stopBubbles} className="bg-white rounded-lg overflow-x-hidden overflow-y-auto shadow-xl transform transition-all sm:max-w-4xl sm:w-full">
                 <div className="bg-white px-4 pt-2 pb-4 sm:p-6 sm:pb-4 sm:pt-2">
                   <div className="sm:flex sm:items-start">
                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
