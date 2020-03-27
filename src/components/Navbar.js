@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import Search from "./Search";
 import { SubmitModal } from "./SubmitModal";
 import Menu from "../icons/menu";
-import GitHub from "../icons/GitHub";
+import GitHub from "../icons/github";
 
 const searchIndices = [
   { name: `Posts`, title: `Blog Posts`, hitComp: `PostHit` },
