@@ -12,7 +12,8 @@ export const createPost = async (data) => {
   const content = `---
 name: ${data.name}
 title: ${data.title}
-date: ${new Date()}
+date: ${new Date().toISOString()}
+description: ${data.description}
 link: ${data.link}
 price: ${data.price}
 tags: ${JSON.stringify(data.tags)}

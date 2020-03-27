@@ -7,14 +7,14 @@ import SEO from "../components/seo"
 const PostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
-  
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article className="max-w-2xl m-auto">
+      <article className="max-w-2xl m-auto px-4 lg:px-2 sm:px-4 xs:px-4">
         <header>
           <div className="flex items-start justify-between">
             <h3 className="flex-1 text-2xl leading-6 font-medium text-gray-900">

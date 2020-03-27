@@ -102,7 +102,7 @@ export const SubmitModal = ({ onSuccess }) => {
                                       <input
                                         name="name"
                                         ref={register}
-                                        className={`px-2 py-2 placeholder-gray-400 text-gray-700 bg-white rounded text-xs shadow focus:outline-none focus:shadow-outline w-full ${errors.title && "border border-solid border-red-500"}`}
+                                        className={`px-2 py-2 placeholder-gray-400 text-gray-700 bg-white rounded text-xs shadow focus:outline-none focus:shadow-outline w-full`}
                                         placeholder="Name"
                                         style={{ transition: "all .15s ease" }}
                                       />

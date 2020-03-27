@@ -5,13 +5,7 @@ export const Alert = memo(({ color, alert, showAlert, setShowAlert, onCloseAlert
   return (
     <>
       {showAlert ? (
-        <div
-          className={
-            "text-white px-4 py-2 border-0 relative flex items-center bg-" +
-            color +
-            "-500"
-          }
-        >
+        <div className={"text-white px-4 py-2 border-0 relative flex items-center bg-" + color + "-500"} >
           <span className="text-xl inline-block mr-5 align-middle">
             <Bell size={20} />
           </span>

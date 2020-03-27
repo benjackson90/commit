@@ -19,6 +19,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title={siteTitle} />
       <PostList pathname={location.pathname} posts={posts} slug={slug} post={post} />
+      <div className="bg-green-500 bg-red-500 hidden" />
     </Layout>
   )
 }

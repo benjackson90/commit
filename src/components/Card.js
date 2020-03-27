@@ -50,7 +50,7 @@ export const Card = ({ post }) => {
             <h3 className="text-base leading-normal font-semibold text-gray-900">{post.frontmatter.title}</h3>
 
             <p className="text-sm leading-snug text-gray-600">
-              <Truncate lines={4}>{post.frontmatter.description}</Truncate>
+              <Truncate lines={4}>{get(post, "frontmatter.description") || ""}</Truncate>
             </p>
             <div className="flex justify-between items-center">
               <div>
