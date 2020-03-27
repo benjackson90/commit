@@ -33,10 +33,10 @@ export const Card = ({ post }) => {
       <div className="group block no-underline h-full overflow-hidden rounded-sm relative shadow-md">
         <div className="select-none cursor-pointer flex flex-col h-full">
           {!!imageHtml && (
-            <section className="h-48 w-full relative" dangerouslySetInnerHTML={{ __html: `<div> ${imageHtml} </div>` }} />
+            <section className="h-48 w-full relative" dangerouslySetInnerHTML={{ __html: `${imageHtml}` }} />
           )}
           {!imageHtml && (
-            <div className="flex items-center justify-center flex-col h-48 w-full relative bg-gray-100">
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }} className="flex items-center justify-center flex-col h-48 w-full relative bg-gray-100">
               <span className="text-2xl text-pink-500 font-semibold">#AgainstCovid19</span>
               <span className="text-2xl text-pink-500 font-semibold">#{post.frontmatter.name}</span>
             </div>

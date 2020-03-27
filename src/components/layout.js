@@ -16,7 +16,7 @@ const Layout = ({ location, title, children }) => {
     setShowAlert(true);
     if (newPull === false || !newPull) {
       setAlertColor('red');
-      setAlert(`Submit failed! Please try again or report bug here: `)
+      setAlert(`Submit failed! Please try again or report bug here: https://github.com/benjackson90/commit/issues`)
       return;
     } else {
       setAlertColor('green');

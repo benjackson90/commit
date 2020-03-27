@@ -17,7 +17,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title={siteTitle} />
       <PostList pathname={location.pathname} posts={posts} slug={slug} post={post} />
     </Layout>
   )

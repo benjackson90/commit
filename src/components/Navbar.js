@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import Search from "./Search";
 import { SubmitModal } from "./SubmitModal";
 import Menu from "../icons/menu";
+import GitHub from "../icons/GitHub";
 
 const searchIndices = [
   { name: `Posts`, title: `Blog Posts`, hitComp: `PostHit` },
@@ -38,7 +39,12 @@ export const Navbar = memo(({ fixed, title, onSuccess }) => {
           >
             <div className="flex-1 flex justify-between items-center">
               <Search collapse indices={searchIndices} />
-              <SubmitModal onSuccess={onSuccess} />
+              <div className="flex items-center">
+                <SubmitModal onSuccess={onSuccess} />
+                <a href="https://github.com/benjackson90/commit" target="_blank">
+                  <GitHub color="white" className="ml-4" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

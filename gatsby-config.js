@@ -9,8 +9,8 @@ module.exports = {
       name: `tungtbt`,
       summary: ``,
     },
-    description: ``,
-    siteUrl: `https://`,
+    description: `Share how companies against covid19`,
+    siteUrl: "https://commit19.netlify.com/",
     social: {
       twitter: ``,
     },
