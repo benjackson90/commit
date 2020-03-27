@@ -4,10 +4,10 @@ import {
   Index,
   Hits,
   connectStateResults,
-} from "react-instantsearch-dom"
-import algoliasearch from "algoliasearch/lite"
-import Input from "./Input"
-import * as hitComps from "./hitComps"
+} from "react-instantsearch-dom";
+import algoliasearch from "algoliasearch/lite";
+import Input from "./input";
+import * as hitComps from "./hitComps";
 import { document } from 'browser-monads';
 
 const Results = connectStateResults(

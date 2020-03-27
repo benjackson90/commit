@@ -1,10 +1,6 @@
 import React from "react"
-import { connectSearchBox } from "react-instantsearch-dom"
-
+import { connectSearchBox } from "react-instantsearch-dom";
 import Search from "./search";
-
-const collapse = "w-0 cursor-pointer"
-const expand = ""
 
 export default connectSearchBox(({ refine, onFocus, ...rest }) => (
   <form className="flex flex-row-reverse items-center">
