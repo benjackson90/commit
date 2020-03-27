@@ -27,6 +27,7 @@ export const Card = ({ post }) => {
 
   const url = post.frontmatter.link ? new URL(post.frontmatter.link) : {}
   const imageHtml = findImage(post.html);
+  console.log(imageHtml);
 
   return (
     <div className="w-full sm:w-card-1/2 md:w-card-1/3 lg:w-card-1/3 xl:w-card-1/4 m-2 px-2" onClick={onClick}>
@@ -35,7 +36,7 @@ export const Card = ({ post }) => {
           {imageHtml ? (
             <div className="h-48 w-full relative" dangerouslySetInnerHTML={{ __html: imageHtml }} />
           ) : (
-            <div className="flex flex-col h-48 w-full relative bg-gray-100 flex items-center justify-center">
+            <div className="flex items-center justify-center flex-col h-48 w-full relative bg-gray-100">
               <span className="text-2xl text-pink-500 font-semibold">#AgainstCovid19</span>
               <span className="text-2xl text-pink-500 font-semibold">#{post.frontmatter.name}</span>
             </div>
